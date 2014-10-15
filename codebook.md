@@ -51,19 +51,7 @@ This was not the logic used to develop *run_analysis.R*.
 
 #Implementation
 
-* `reshape2` and `data.table` are loaded
-* Features and activity labels are loaded
-* Test and train data are loaded (X,y and subjects)
-* Column names are updated to have the name of the features, subject or activiy label/id (4)
-* New column is added for `y_test` and `y_train` containing the activity label (3,4)
-* Columns of `X_test` and `X_train` containing `mean` or `std` are selected (2)
-* The columns of two new data.frames are populated from the test and train data 
-* Train and test data are merged (1)
-* The mean for each activity performed by each subject is calculated. This is the final data (5)
-* The data is writen into a file
-
 ##Variables
-
 
 | Variable      | Description                                            |
 |---------------|--------------------------------------------------------|
@@ -79,5 +67,20 @@ This was not the logic used to develop *run_analysis.R*.
 | X_train       | Instances features for the train set                   |
 | y_test        | Instance labels for the test set                       |
 | y_train       | Instance labels for the train set                      |
+
+##Methodology
+
+* `reshape2` and `data.table` are loaded
+* Features and activity labels are loaded
+* Test and train data are loaded (X,y and subjects)
+* Column names are updated to have the name of the features, subject or activiy label/id (4)
+* New column is added for `y_test` and `y_train` containing the activity label (3,4)
+* Columns of `X_test` and `X_train` containing `mean` or `std` are selected (2)
+* The columns of two new data.frames are populated from the test and train data 
+* Train and test data are merged (1)
+* The mean for each activity performed by each subject is calculated. This is the final data (5)
+* The data is writen into a file
+
+
 
 Hope that was not too boring!
